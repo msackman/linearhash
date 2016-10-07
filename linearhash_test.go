@@ -99,8 +99,9 @@ func TestFillBuckets01Split(t *testing.T) {
 
 // This test however is brilliant. I love this approach to testing.
 func TestSoak(t *testing.T) {
-	// sadly undirected, but nevertheless fairly sensible way of doing
-	// testing. Takes about 100 seconds for 10million ops.
+	// Sadly undirected, but nevertheless fairly sensible way of doing
+	// testing. Takes about 100 seconds for 10million ops. If you turn
+	// all the log calls off, it takes 25 seconds for 10million ops!
 	seed := time.Now().UnixNano()
 	// seed = int64(1475356421782933095)
 	t.Logf("Seed: %v", seed)
