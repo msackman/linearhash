@@ -250,7 +250,7 @@ func (b *bucket) remove(key Hashable) (bNew *bucket, removed bool, chainDelta in
 				return b, true, 0
 			}
 			removed = true
-		} else if e.key != nil {
+		} else {
 			empty = false
 		}
 	}
